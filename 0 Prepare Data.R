@@ -44,14 +44,14 @@ library(zoo)
 # FUNCTIONS
 ######################
 
-# Acture to Chronic Workload Ratio
+# Acute to Chronic Workload Ratio
 ACWR <- function(acute, chronic) {
     acwr <- acute / chronic
     acwr <- ifelse(chronic == 0, 0, acwr) 
     return(acwr)
 }
 
-# Acture to Chronic Workload Difference
+# Acute to Chronic Workload Difference
 ACWD <- function(acute, chronic) {
     acwd <- acute - chronic
     return(acwd)
